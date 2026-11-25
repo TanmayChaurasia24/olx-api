@@ -1,8 +1,8 @@
 .PHONY: build run
 
 build:
-	go build -o bin/olx-api-server main.go
+	go build -o bin/api ./cmd/api
 
-run:
-	./bin/olx-api-server
+run: build
+	./bin/api
 
